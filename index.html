@@ -1,0 +1,47 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/vite.svg"/>
+  <link rel="stylesheet" href="node_modules/bootstrap/scss/bootstrap.scss">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Odoo App</title>
+</head>
+
+<body>
+
+<div id="app-wrapper">
+  <div class="container">
+    <div class="row">
+
+      <div class="products-block">
+        <div class="products-block-header">
+          <h1>Products</h1>
+
+          <div class="select-container">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select">
+              <option value="none" selected>None</option>
+              <option value="highToLow">High to Low</option>
+              <option value="lowToHigh">Low to High</option>
+              <option value="aToZ">A to Z</option>
+              <option value="zToA">Z to A</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="loader"></div>
+
+        <div class="container-fluid">
+          <div class="products-block-content row"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script type="module" src="/scripts/main.js"></script>
+
+</body>
+</html>
